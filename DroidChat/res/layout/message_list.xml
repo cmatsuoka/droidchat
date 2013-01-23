@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.garrett.droidchat.MessagesFragment" >
+
+    <ListView
+        android:id="@+id/chatMsg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:clickable="false"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:saveEnabled="false"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/sendMsgButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</LinearLayout>

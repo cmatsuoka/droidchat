@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- This is our main ActionBarSherlock theme -->
+    <style name="Theme.Custom" parent="Theme.Sherlock.Light">
+
+    </style>
+    
+    <!-- This is our ViewPagerIndicator theme. We inherit from the ABS theme -->
+    <style name="Theme.VPI" parent="Theme.Custom">
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+    </style>
+
+    <!-- "Implementation" of VPI theme. We just set the text size and color. -->
+    <style name="CustomTitlePageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:textColor">#aa000000</item>
+        <item name="selectedColor">#ff000000</item>
+        <item name="selectedBold">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,35 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+
+# XXX this is only meant for testing
+# do not yell about the bad code !
+
+import sys
+import time
+from pychat import ChatClient
+
+def main(argv):
+
+	if len(argv) != 3:
+		print "usage: %s <name> <host>" % (argv[0])
+		sys.exit(1)
+
+	name = argv[1]
+	server = argv[2]
+	client = ChatClient()
+
+	if not client.start(name, server):
+		print "Error while connecting to server"
+		sys.exit(1)
+
+	# XXX
+	while True:
+		try:
+			time.sleep(1)
+		except KeyboardInterrupt:
+			client.stop()
+			sys.exit(0)
+
+if __name__ == "__main__":
+	main(sys.argv)
+

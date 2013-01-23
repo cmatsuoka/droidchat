@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server">Server</string>
+    <string name="name">Name</string>
+    <string name="connect">Connect</string>
+    <string name="connection_failed">Connection failed, server is probably offline</string>
+    <string name="default_server">10.0.2.2</string>
+    <string name="default_name">name</string>
+    
+</resources>
