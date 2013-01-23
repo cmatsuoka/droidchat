@@ -24,7 +24,8 @@ That being said, have fun :D
 Required libraries
 ------------------
 
-The following libraries are used in this application:
+The following libraries are used in this application. 
+If you are using Eclipse, you must set them as Libraries on the Android section of your project properties.
 
 - **[ActionBarSherlock](http://actionbarsherlock.com/):** an extension of the support library designed to
   facilitate the use of the action bar design pattern across all versions
