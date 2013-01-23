@@ -4,3 +4,13 @@
 *.jar
 *.war
 *.ear
+
+# compiled python files
+*.pyc
+
+# eclipse files
+DroidChat/bin
+DroidChat/gen
+DroidChat/assets
+DroidChat/libs
+
