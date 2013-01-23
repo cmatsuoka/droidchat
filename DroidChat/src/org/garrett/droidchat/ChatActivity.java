@@ -257,18 +257,5 @@ public class ChatActivity extends SherlockFragmentActivity {
 			}
 		});
     }
-    
-    // back button should not go to the login screen
-//    @Override
-//    public void onBackPressed() {
-//    	Intent intent = new Intent();
-//    	intent.setAction(Intent.ACTION_MAIN);
-//    	intent.addCategory(Intent.CATEGORY_HOME);
-//
-//    	startActivity(intent);
-//
-//    	return;
-//    }
-    
 }
 
